@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 
 const Form = ({ onFormSubmit }) => {
@@ -59,7 +60,7 @@ const Form = ({ onFormSubmit }) => {
           ))}
         </div>
       </div>
-        {selectedImage && <img className="selected-image" src={`/images/${selectedImage}.jpg`} alt={selectedImage}/>}  
+        {selectedImage && <img className="selected-image" src={`images/${selectedImage}.jpg`} alt={selectedImage}/>}  
       <div className="checkbox-container">
         <div>
           <p><strong>Seleciona tus respuestas de acuerdo a lo que ves en las fotografias</strong></p>
